@@ -1,8 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import dogs from './data'
+import {getDogs} from './data'
 
 function Navbar() {   
+  let dogs = getDogs();
   return (
     <div className='Navbar'>
         {dogs.map(dog=>(
