@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Dog from './Dog'
 
-function Home() {
-  return (
-    <div>Home</div>
-  )
+export class Home extends Component {
+  render() {
+     
+    return (
+      <div className='Home'>
+         {this.props.dogs.map(dog=>(
+             <Dog {...dog} key={dog.name}/>   
+         ))}
+      </div>
+    )
+  }
 }
 
 export default Home
