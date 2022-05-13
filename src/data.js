@@ -31,4 +31,14 @@ const dogs = [
     }
   ]
 
-export default dogs;
+  function getDogs(){
+    return dogs
+  }
+  
+   function searchDogs(dogs,name) {
+      return dogs.find(
+        (dog) => dog.name === name
+      );
+    }
+  
+    export {getDogs,searchDogs}
