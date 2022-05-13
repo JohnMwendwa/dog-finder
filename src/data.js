@@ -39,10 +39,10 @@ const dogs = [
     return dogs
   }
   
-   function searchDogs(dogs,name) {
+   function searchDog(dogs,name) {
       return dogs.find(
         (dog) => dog.name === name
       );
     }
   
-    export {getDogs,searchDogs}
+    export {getDogs,searchDog}
