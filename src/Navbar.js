@@ -1,9 +1,13 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import dogs from './data'
 
-function Navbar() {
+function Navbar() {   
   return (
     <div className='Navbar'>
-        Home
+        {dogs.map(dog=>(
+            <NavLink to={`/dogs/${dog.name}`}>{dog.name}</NavLink>
+        ))}
     </div>
   )
 }
