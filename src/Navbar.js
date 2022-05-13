@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className='Navbar'>
         {dogs.map(dog=>(
-            <NavLink to={`/dogs/${dog.name}`}>{dog.name}</NavLink>
+            <NavLink to={`/dogs/${dog.name}`} key={dog.name}>{dog.name}</NavLink>
         ))}
     </div>
   )
