@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import {getDogs} from './data'
+import './Navbar.css'
 
 function Navbar() {   
   let dogs = getDogs();

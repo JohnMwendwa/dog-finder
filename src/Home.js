@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Dog from './Dog'
+import './Home.css'
 
 export class Home extends Component {
   render() {
